@@ -1,0 +1,94 @@
+body{
+    background: #0E1013;
+    color: #fefefe;
+    font-family: 'Roboto mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.header{
+    background: #1B1D20;
+    /* background: linear-gradient(180deg, rgba(155,48,249,.1) 0%, rgba(14,16,19,0) 100%); */
+    display: flex;
+    justify-content : initial;
+    align-content : center;
+    align-items: center;
+    padding-left: 10%
+}
+
+body header h1{
+    font-size: 2em;
+}
+
+.header img{
+ max-width: 30px;
+ max-height: 30px;
+ margin-right: 1em;
+}
+.header>.eyeIcon{
+    margin-left: calc(-1rem + -30px);
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #1B1D20;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px #9B30F9 solid;
+    padding: 1.2%;
+
+}
+
+.controles{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px #9B30F9 solid;
+    width: 50%;
+}
+
+.controles h3{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.control-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.control-items input{
+    background: linear-gradient(90deg, rgba(155,48,249,1) 0%, rgba(155,48,249,1) 100%);
+    color: #fefefe;
+    width: 120px;
+    height: 30px;
+    font-size: 1em;
+    
+    border-radius: 3px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.control-items input:hover{
+    animation: onHoverAnimation .5s normal;
+}
+
+@keyframes onHoverAnimation {
+    0% {
+        background: linear-gradient(90deg, rgba(155,48,249,1) 0%, rgba(155,48,249,1) 100%);      
+    }
+    100% {
+        background: linear-gradient(90deg, #9b30f9 0%, #6606f6 100%);
+    }
+}
+
+.resultado{
+    border-left: 1px #9B30F9 solid;
+    width: 50%;
+}
