@@ -39,7 +39,7 @@ body header h1{
     max-width: 1200px;
     border-radius: 10px;
     border: 2px #9B30F9 solid;
-    padding: 1.2%;
+    padding: 20px;
 
 }
 
@@ -50,7 +50,7 @@ body header h1{
     width: 50%;
 }
 
-.controles h3{
+.controles h3, .resultado h3{
     font-size: 1.5em;
     margin: 10px 0;
 }
@@ -59,6 +59,7 @@ body header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 5px 0 0;
 }
 
 .control-items input{
@@ -86,19 +87,68 @@ body header h1{
     border: #9B30F9 1px solid;
 }
 
-/* @keyframes onHoverAnimation {
-    0% {
-        background: linear-gradient(90deg, #6606f6 0) calc(100% - var(--_p,0%))/200% 100%, (#6606f6 0 0) 0% 100%/var(--_p,0%) 100% no-repeat;    
-        -webkit-background-clip: text,padding-box;
-        background-clip: text,padding-box;
-        transition: 0.5s;
-    }
-    100% {
-        background: linear-gradient(90deg, #9b30f9 0%, #6606f6 100%);
-    }
-} */
-
 .resultado{
     border-left: 1px #9B30F9 solid;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+
+}
+
+.result-board{
+    background: #0E1013;
+    width: 90%;
+    height: 400px;
+    margin: 0 0 0 5%;
+    border-radius: 6px;
+    padding: 5px;
+
+
+    /* Será automatizado */
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    flex-direction : column;
+    align-content : space-around;
+    flex-wrap : wrap;
+}
+
+.squares{
+    background: linear-gradient(180deg, #9B30F9 0%, #6606f6 100%);
+    width: 90px;
+    height: 90px;
+
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px #fefefe1f solid;
+}
+
+.css-board{
+    background: #0E1013;
+    width: 80%;
+    height: 160px;
+    margin: 40px 0 0 5%;
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+pre{
+ margin: .5em;   
+ box-sizing: border-box;
+}
+.css-result{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+.css-result span {
+    display: block;
+    font-size: .8em;
 }
