@@ -107,11 +107,7 @@ body header h1{
 
     /* Será automatizado */
     display : flex;
-    justify-content : space-around;
-    align-items : center;
-    flex-direction : column;
-    align-content : space-around;
-    flex-wrap : wrap;
+
 }
 
 .squares{
@@ -127,7 +123,7 @@ body header h1{
 .css-board{
     background: #0E1013;
     width: 80%;
-    height: 160px;
+    height: 9em;
     margin: 40px 0 0 5%;
     border-radius: 6px;
     padding: 5px;
@@ -139,17 +135,16 @@ pre{
  box-sizing: border-box;
 }
 .css-result{
-    font-family: 'IBM Plex Mono', monospace;
     color: #fefefe;
     display: flex;
+    text-transform: none;
     flex-direction: column;
     align-items: baseline;
+    text-align: initial;
 }
-
 
 .css-result span {
     display: block;
-    font-size: .8em;
 }
 
 @media (max-width: 850px)
