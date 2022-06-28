@@ -74,7 +74,6 @@ body header h1{
     border: none;
     margin: 5px;
     cursor: pointer;
-
 }
 
 .control-items input:hover{
@@ -151,4 +150,88 @@ pre{
 .css-result span {
     display: block;
     font-size: .8em;
+}
+
+@media (max-width: 850px)
+{
+    body header h1{
+        font-size: 1.5em;
+    }
+
+    .header{
+        display: flex;
+        justify-content : center;
+        padding-left: 0%;
+    }
+    .container{
+        flex-direction: column-reverse;
+
+    }
+    .controles{
+        width: 100%;
+        border-right: none;
+        border-top: 1px #9B30F9 solid;
+        padding-top: 40px;
+    }
+
+    .resultado{
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px #9B30F9 solid;
+        padding-bottom: 40px;
+    }
+
+    .controles h3, .resultado h3{
+        font-size: 1.1em;
+    }
+
+    .control-items input{
+        color: #fefefe;
+        width: 120px;
+        height: 30px;
+        font-size: .875em;
+        
+        border-radius: 3px;
+        border: none;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .result-board{
+        margin: 0;
+        width: 100%;
+    }
+    .css-board{
+        margin:  40px 0 0 0;
+    }
+
+    .squares{
+        background: linear-gradient(180deg, #9B30F9 0%, #6606f6 100%);
+        width: 90px;
+        height: 90px;
+    
+        box-sizing: border-box;
+        border-radius: 6px;
+        border: 1px #fefefe1f solid;
+    }
+}
+
+
+@media (max-width: 500px)
+{
+    .result-board{
+        height: 300px;
+    }
+
+    .squares{
+        width: 61px;
+        height: 61px;
+    
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+
+    .css-result span {
+        font-size: .7em;
+    }
 }
