@@ -28,6 +28,17 @@ function handleClick(event){
     functionName = event.path[1].id
     styleValue = event.target.value;
     styleListObject[functionName](styleValue);
+    showCss();
 }
 
+function initcss(){
+    divResult.style.cssText = 'justify-content: initial; align-items: initial; flex-direction: initial; align-content: initial; flex-wrap : wrap;'
+}
+initcss();
 
+function showCss(){
+    cssResult.innerHTML = `<span>.Classe{</span>
+    <span>  display: flex</span>
+    <span>  ${divResult.style.cssText.split('; ').join(';</span><span>  ')}<span>}</span>`
+}
+showCss();
