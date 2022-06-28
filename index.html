@@ -20,10 +20,10 @@
 
     <section class="container">
         <div class="controles">
-            <div>
+            <form id="form-control">
                 <h3>Justify Content</h3>
-                <div class="control-items">
-                    <input type="button" class="ativo" value="initial">
+                <div class="control-items" id="justifyContent">
+                    <input type="button" name="initial"  class="ativo" value="initial">
                     <input type="button" value="center">
                     <input type="button" value="flex-start">
                     <input type="button" value="flex-end">
@@ -33,7 +33,7 @@
                 </div>
     
                 <h3>Align Items</h3>
-                <div class="control-items">
+                <div class="control-items" id="alignItems">
                     <input type="button" class="ativo" value="initial">
                     <input type="button" value="center">
                     <input type="button" value="start">
@@ -42,7 +42,7 @@
                 </div>
                 
                 <h3>Flex Direction</h3>
-                <div class="control-items">
+                <div class="control-items" id="flexDirection">
                     <input type="button" class="ativo" value="initial">
                     <input type="button" value="column">
                     <input type="button" value="row">
@@ -51,7 +51,7 @@
                 </div>
 
                 <h3>Align Content</h3>
-                <div class="control-items">
+                <div class="control-items" id="alignContent">
                     <input type="button" class="ativo" value="initial">
                     <input type="button" value="flex-start">
                     <input type="button" value="flex-end">
@@ -60,7 +60,7 @@
                     <input type="button" value="space-around">
                     <input type="button" value="space-evenly">
                 </div>    
-            </div>
+            </form>
         </div>
 
         <div class="resultado">
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    
+<script src="scripts/script.js"></script>
 </body>
 </html>
 
